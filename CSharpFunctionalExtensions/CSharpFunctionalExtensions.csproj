@@ -294,6 +294,27 @@
     <Compile Update="Result\Methods\Extensions\TapIfTry.Task.Right.cs">
       <DependentUpon>TapIfTry.Task.cs</DependentUpon>
     </Compile>
+    <Compile Update="Maybe\Extensions\MapTry.Task.cs">
+      <DependentUpon>MapTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Extensions\MapTry.Task.Left.cs">
+      <DependentUpon>MapTry.Task.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Extensions\MapTry.Task.Right.cs">
+      <DependentUpon>MapTry.Task.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Try.Task.cs">
+      <DependentUpon>Try.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Extensions\ExecuteTry.Task.cs">
+      <DependentUpon>ExecuteTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Extensions\ExecuteTry.Task.Left.cs">
+      <DependentUpon>ExecuteTry.Task.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Maybe\Extensions\ExecuteTry.Task.Right.cs">
+      <DependentUpon>ExecuteTry.Task.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
