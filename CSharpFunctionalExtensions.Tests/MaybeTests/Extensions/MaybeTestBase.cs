@@ -88,5 +88,25 @@ namespace CSharpFunctionalExtensions.Tests.MaybeTests.Extensions
                 return Maybe<T>.From(result).AsCompletedValueTask();
             };
         }
+        
+        protected static Func<T, R> Throw<R>(R result)
+        {
+            return _ => throw new Exception();
+        }
+        
+        protected static Func<T, Task<R>> Throw_Task<R>(R result)
+        {
+            return _ => throw new Exception();
+        }
+        
+        protected static void Throw_Action<R>(R result)
+        {
+            throw new Exception();
+        }
+        
+        protected static async Task Throw_Action_Task<R>(R result)
+        {
+            Throw_Action(result);
+        }
     }
 }
